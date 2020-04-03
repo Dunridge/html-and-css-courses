@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Descendant Selectors</title>
+    <style>
+        /**************
+        ul li  - descendant (all li elements down the DOM tree)
+        ul > li  - child (all the direct children elements and not their children)
+        Both work with tag, class, id, pseudo-class, etc
+        **************/
+        main a{
+            /* anchors that are descendants of main */
+            text-decoration: overline
+        }
+        main > a{
+            /* anchors that are children of main */
+            font-size: 8rem;
+        }
+        p > a{
+            /* anchors that are children of p */
+            color: orange;
+        }
+        
+        a > mark{
+            /* marks that are children of a */
+            color: aqua;
+        }
+        main mark{
+            /* marks that are descendants of main */
+            font-size: 2rem;
+            color: red;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Descendant Selectors</h1>
+        <h2>Descendant &amp; Child</h2>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Ipsum ullam</a> excepturi id, explicabo sequi reiciendis placeat! Non iusto rerum quasi ipsa quos perspiciatis veritatis, commodi, mollitia inventore magni odit dolores!</p>
+        <p>Itaque aliquid quo provident harum quam commodi aperiam <a href="#">cum maxime dicta</a> voluptatem delectus quaerat, perspiciatis ipsam architecto nisi amet dignissimos asperiores unde eos natus aliquam, non explicabo incidunt. Dolorum, esse!</p>
+        <p>Sit harum blanditiis, perferendis accusantium <a href="#">asperiores <mark>praesentium quam</mark> illo repellendus.</a> Illo eligendi beatae minima autem esse delectus maxime sint at id officiis dolore fuga, necessitatibus ipsum a dicta perferendis eos.</p>
+    </main>
+</body>
+</html>

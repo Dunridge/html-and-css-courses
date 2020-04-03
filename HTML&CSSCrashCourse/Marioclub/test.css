@@ -1,0 +1,7 @@
+body > main > article > h2 {
+    color: red;
+}
+
+body {
+    background: green;
+}

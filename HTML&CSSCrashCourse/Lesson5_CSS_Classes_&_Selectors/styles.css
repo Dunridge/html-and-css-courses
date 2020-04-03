@@ -1,0 +1,65 @@
+/* 
+
+
+p.error {
+    color: red;
+}
+
+p.success {
+    color: #6a9b6a;
+}
+
+p.success.feedback {
+    border: 1px dashed #6a9b6a; 
+    color: purple;
+}
+
+div#content {
+    background-color: #ebebeb;
+    padding: 20px;
+}
+ */
+
+/* div .error {
+    color: red;
+}
+
+/*but this will get the div the class of error
+div.error {
+    color: red;
+} */
+
+/* a[href*="thenetninja"] {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a[href*="google"] {
+    color: white;
+    background: blue;
+    border: 2px solid blue;
+}
+
+a[href$="com"] {
+    color: rebeccapurple;
+} */
+
+div {
+    color: lightcoral;
+    border: 1px solid grey;
+    margin: 40px;
+    font-weight: bold;
+}
+
+div p {
+    border: inherit;
+    margin: inherit;
+    color: crimson;
+}
+
+p {
+    color: orange;
+}
