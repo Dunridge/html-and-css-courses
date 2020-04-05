@@ -48,7 +48,19 @@
         }
 
         #content {
+            animation: rotate 10s linear 2s infinite;
             transform: rotate(45deg) scale(0.7);
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotateZ(0deg);
+                /* //decrease the size here */
+            }
+
+            100%{
+                transform: rotateZ(360deg);
+            }
         }
 	</style>
 </head>
@@ -56,11 +68,11 @@
 
 	<div id="content">
 
-		<div class="one">1</div>
-		<div class="two">2</div>
-		<div class="three">3</div>
-		<div class="four">4</div>
-		<div class="five">5</div>
+		<div class="one"></div>
+		<div class="two"></div>
+		<div class="three"></div>
+		<div class="four"></div>
+		<div class="five"></div>
 
 	</div>
 
